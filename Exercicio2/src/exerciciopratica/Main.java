@@ -53,16 +53,18 @@ public class Main {
 		comprador.add(comp2);
 		for (Comprador comp : comprador) {
 			System.out.println(comp.getNomeComp());
+			System.out.println(comp.getFilme().getNomeN());
+			System.out.println(comp.getFilme().getGenero());
 			System.out.println(comp.getFilme().getDuracao());
 			System.out.println(comp.getFilme().getFabricante());
-			System.out.println(comp.getFilme().getGenero());
-			System.out.println(comp.getFilme().getNomeN());
 			System.out.println(comp.getFilme().getCodBarras());
-			System.out.println(comp.getLivro().getFabricante());
-			System.out.println(comp.getLivro().getGenero());
+			System.out.println("");
 			System.out.println(comp.getLivro().getNome());
-			System.out.println(comp.getLivro().getCodBarras());
+			System.out.println(comp.getLivro().getGenero());
 			System.out.println(comp.getLivro().getNumPaginas());
+			System.out.println(comp.getLivro().getFabricante());
+			System.out.println(comp.getLivro().getCodBarras());
+			System.out.println("");
 			
 			
 			
