@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SomarController">
+   <children>
+      <GridPane layoutY="7.0" prefHeight="493.0" prefWidth="685.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="139.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="565.0" minWidth="10.0" prefWidth="546.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="97.0" minHeight="0.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="182.0" minHeight="0.0" prefHeight="129.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="251.0" minHeight="0.0" prefHeight="137.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="130.0" minHeight="0.0" prefHeight="130.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblnumero1" text="Número1" GridPane.halignment="CENTER" />
+            <Label fx:id="lblnumero2" text="Numero2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="lblresultado" text="Resultado" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label fx:id="lblsoma" maxHeight="20.0" maxWidth="220.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtnumero1" maxWidth="225.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <TextField fx:id="txtnumero2" maxWidth="225.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnSomar" mnemonicParsing="false" onAction="#onClickBtnSomar" text="Somar" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#onClickBtnLimpar" text="Limpar" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnFechar" mnemonicParsing="false" onAction="#onClickBtnFechar" text="Fechar" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
